@@ -15,6 +15,7 @@ namespace Notebook
         private const string OutputMessage = "All 3 types of output:";
         private const string ResultString = "Name: {0}, Age {1}, Height {2}, History {3}, Math {4}, Russian {5}, " +
                                             "Average {6}";
+        private const string PressKeyMessage = "Press any key to continue...";
         
         /// <summary>
         /// XML comment demo. Main class
@@ -35,10 +36,13 @@ namespace Notebook
             DisplayText("Math result: " + ResultMath);
             DisplayText("Russian result: " + ResultRussian);
             DisplayText("Average score: " + formattedAverageScore);
+            DisplayText(PressKeyMessage);
+            Console.ReadKey();
             DisplayText();
+            
             //method 2 centered
             var centerX = (Console.WindowWidth / 2);
-            var countStrings = 10;
+            var countStrings = 2;
             Console.SetCursorPosition(centerX,countStrings); // if it is needed to display text in absolute
                                                              // center of console another variable centerY is needed
             DisplayText($"Name: {Name}");
@@ -55,7 +59,8 @@ namespace Notebook
             Console.SetCursorPosition(centerX, ++countStrings);
             DisplayText($"Average score: {formattedAverageScore}");
             Console.SetCursorPosition(centerX, ++countStrings);
-            DisplayText();
+            DisplayText(PressKeyMessage);
+            Console.ReadKey();
             //Method 3 in one string for example
             DisplayText(string.Format(ResultString, Name, Age, Height, ResultHistory, ResultMath, ResultRussian, 
                 formattedAverageScore));
