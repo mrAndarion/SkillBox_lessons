@@ -71,6 +71,7 @@ namespace Micarosppoftle_Game
             
             do
             {
+                EmptyString();
                 DisplayText(string.Format(RoundNumberMessage, roundNumber));
                 foreach (var playerName in playersNames)
                 {
@@ -97,6 +98,7 @@ namespace Micarosppoftle_Game
             
             do
             {
+                EmptyString();
                 DisplayText(string.Format(RoundNumberMessage, roundNumber));
                 PlayerMove(ref gameNumber, playerName, ref userTry);
                 if (gameNumber == 0)
@@ -122,6 +124,7 @@ namespace Micarosppoftle_Game
                 roundNumber++;
             } while (true);
             
+            EmptyString();
             DisplayText(string.Format(WinnerMessage, winnerName));
             return DoRematch();
         }
@@ -132,7 +135,6 @@ namespace Micarosppoftle_Game
             DisplayTurn(string.Format(PlayerTurnMessage, playerName));
             var userTurn = GetValidInt(Console.ReadLine(), 1, 
                 gameNumber < userTry ? gameNumber : userTry);
-            EmptyString();
             gameNumber -= userTurn;
         }
         
@@ -144,8 +146,7 @@ namespace Micarosppoftle_Game
             var pcTurn = gameNumber < userTry ? randomGenerator.Next(1, gameNumber + 1) 
                 : randomGenerator.Next(1, userTry + 1);
             Thread.Sleep(ComputerMoveDelay);
-            DisplayTurn(pcTurn.ToString());
-            EmptyString();
+            DisplayText(pcTurn.ToString());
             gameNumber -= pcTurn;
         }
         
@@ -164,8 +165,7 @@ namespace Micarosppoftle_Game
                 pcTurn = gameNumber <= userTry ? gameNumber : randomGenerator.Next(1, userTry + 1);
             }
             Thread.Sleep(ComputerMoveDelay);
-            DisplayTurn(pcTurn.ToString());
-            EmptyString();
+            DisplayText(pcTurn.ToString());
             gameNumber -= pcTurn;
         }
 
