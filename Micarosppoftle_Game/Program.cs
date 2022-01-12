@@ -21,7 +21,7 @@ namespace Micarosppoftle_Game
         private const string RoundNumberMessage = "Round {0}: ";
         private const string RematchMessage = "Wanna rematch? (input yes or no) ";
         private const string SelectDifficultyMessage = "Select AI difficulty (input easy or hard) ";
-        private const string GameFinishedMessage = "Thank you for the game. Take care =) ";
+        private const string GameFinishedMessage = "Thank you for playing. Take care =) ";
         private const string AiName = "Computer";
         private const string EasyMode = "easy";
         private const string HardMode = "hard";
@@ -219,7 +219,7 @@ namespace Micarosppoftle_Game
         private static int GetValidInt(string inputString, int minValue, int maxValue)
         {
             int validInt;
-            while (!(int.TryParse(inputString, out validInt)) || ((validInt < minValue) || (validInt > maxValue)))
+            while (!int.TryParse(inputString, out validInt) || validInt < minValue || validInt > maxValue)
             {
                 DisplayText(string.Format(WarningInputMessage, minValue, maxValue));
                 inputString = Console.ReadLine();
