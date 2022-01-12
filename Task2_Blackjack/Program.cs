@@ -15,8 +15,9 @@ namespace Task2_Blackjack
         private const int MinCardAmount = 0;
         private const int MaxCardAmount = 50;
         private const int ImageCardIntValue = 10;
-        private const int AceCardIntValue = 11;
-        
+        private const int AceCardIntValue = 11; // The task will be far more interesting if the whole game was expected
+                                                // with logic where Ace could be 11 or 1
+
         public static void Main(string[] args)
         {
             DisplayText(CardsAmountMessage);
