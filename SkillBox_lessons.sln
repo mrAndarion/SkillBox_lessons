@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2_Blackjack", "Task2_Bl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task3_PrimeNumbers", "Task3_PrimeNumbers\Task3_PrimeNumbers.csproj", "{BAD5F863-E2B9-46FB-9251-C5E30C380BF2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson4_HW", "Lesson4_HW", "{0577B3E8-EB9F-4D51-BCE6-CFED3D24086C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
