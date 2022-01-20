@@ -58,10 +58,6 @@ namespace Task1_RandomMatrix
         /// <summary>
         /// To validate integer value from Console
         /// </summary>
-        /// <param name="inputString"></param>
-        /// <param name="minValue"></param>
-        /// <param name="maxValue"></param>
-        /// <returns></returns>
         private static int GetValidInt(string inputString, int minValue, int maxValue)
         {
             int validInt;
