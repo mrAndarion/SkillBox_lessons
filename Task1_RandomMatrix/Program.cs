@@ -81,6 +81,7 @@ namespace Task1_RandomMatrix
             }
         }
 
+        
         private static void EmptyString()
         {
             Console.WriteLine();
