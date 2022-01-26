@@ -34,8 +34,6 @@ namespace Additional_task1_finances
         /// <summary>
         /// Get amount of months with positive profit
         /// </summary>
-        /// <param name="profitList"></param>
-        /// <returns></returns>
         private static int GetPositiveProfitMonthsCount(List<ProfitPerMonth> profitList)
         {
             var count = profitList.Count(item => item.Profit > 0);
