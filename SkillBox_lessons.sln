@@ -32,6 +32,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Additional_task1_finances",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Additional_task2_PascalTriangle", "Additional_task2_PascalTriangle\Additional_task2_PascalTriangle.csproj", "{15989C3F-10DB-4F2B-9A82-98AD32B3DD42}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Additional_task_3_1", "Additional_task_3_1\Additional_task_3_1.csproj", "{EC7BA3C2-5409-467E-A827-FADA072DE286}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,6 +88,10 @@ Global
 		{15989C3F-10DB-4F2B-9A82-98AD32B3DD42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15989C3F-10DB-4F2B-9A82-98AD32B3DD42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15989C3F-10DB-4F2B-9A82-98AD32B3DD42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC7BA3C2-5409-467E-A827-FADA072DE286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC7BA3C2-5409-467E-A827-FADA072DE286}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC7BA3C2-5409-467E-A827-FADA072DE286}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC7BA3C2-5409-467E-A827-FADA072DE286}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{24636B26-47C2-4318-A927-26415FD4F432} = {01E9C8D4-630F-4D9E-B1FF-F1F2451CE6CD}
@@ -100,5 +106,6 @@ Global
 		{77576308-3C08-4B79-A23C-A2273921FC5F} = {0577B3E8-EB9F-4D51-BCE6-CFED3D24086C}
 		{915BB4C0-8C77-4294-9848-8D631F981EE1} = {0577B3E8-EB9F-4D51-BCE6-CFED3D24086C}
 		{15989C3F-10DB-4F2B-9A82-98AD32B3DD42} = {0577B3E8-EB9F-4D51-BCE6-CFED3D24086C}
+		{EC7BA3C2-5409-467E-A827-FADA072DE286} = {0577B3E8-EB9F-4D51-BCE6-CFED3D24086C}
 	EndGlobalSection
 EndGlobal
