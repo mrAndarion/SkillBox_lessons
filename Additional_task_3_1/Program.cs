@@ -36,7 +36,7 @@ namespace Additional_task_3_1
         /// <summary>
         /// Multiply matrix on the number
         /// </summary>
-        private static int[,] GetResultMatrix(int[,] randomMatrix, int multiplier)
+        private static long[,] GetResultMatrix(long[,] randomMatrix, int multiplier)
         {
             for (var i = 0; i < randomMatrix.GetLongLength(0); i++)
             {
@@ -52,9 +52,9 @@ namespace Additional_task_3_1
         /// <summary>
         /// Generate random matrix
         /// </summary>
-        private static int[,] GenerateRandomMatrix(int rowCount, int columnCount)
+        private static long[,] GenerateRandomMatrix(int rowCount, int columnCount)
         {
-            var randomMatrix = new int[rowCount, columnCount];
+            var randomMatrix = new long[rowCount, columnCount];
             var randomizer = new Random();
             
             for (var i = 0; i < randomMatrix.GetLongLength(0); i++)
@@ -82,7 +82,7 @@ namespace Additional_task_3_1
             return validInt;
         }
 
-        private static void ShowMatrix(int[,] resultMatrix)
+        private static void ShowMatrix(long[,] resultMatrix)
         {
             for (var i = 0; i < resultMatrix.GetLongLength(0); i++)
             {
@@ -104,7 +104,7 @@ namespace Additional_task_3_1
             Console.WriteLine(text);
         }
         
-        private static void DisplayElement(int matrixElement)
+        private static void DisplayElement(long matrixElement)
         {
             Console.Write($"{matrixElement, 6} ");
         }
